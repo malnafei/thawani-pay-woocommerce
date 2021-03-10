@@ -1,6 +1,4 @@
-
 <img src="https://user-images.githubusercontent.com/15148391/110596419-b795ec00-8198-11eb-8173-5e5592e0e4f0.png" width="420">
-
 
 # Thawani Pay v2 for WooCommerce
 
