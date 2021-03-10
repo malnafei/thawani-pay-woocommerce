@@ -48,6 +48,10 @@ For detailed information and signup please visit: [Thawani Pay](https://thawani.
 ## Test with UAT
 You can test if the payment works correctly by enableing the UAT mode <img width="156" alt="Screen Shot 2021-03-10 at 11 36 51 AM" src="https://user-images.githubusercontent.com/15148391/110593372-ead67c00-8194-11eb-9fce-bab7d442ace1.png">
 
+UAT Secret Key: `rRQ26GcsZzoEhbrP2HZvLYDbn9C9et`
+
+UAT Publishable Key: `HGvTMLDssJghr9tlN9gr4DVYt0qyBy`
+
 You can use the test cards provided by Thawani Team:
 
 **Success Card**
