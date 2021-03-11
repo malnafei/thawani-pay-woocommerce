@@ -236,7 +236,6 @@ function thawani_init_gateway_class() {
         ),
       );
       
-      echo '<script>console.log("data: ' . json_encode($payment_json) . '")</script>';
       $data = json_encode($payment_json);
 
       try {
@@ -405,7 +404,7 @@ function woocommerce_process_thawani_payment() {
             $order->add_order_note('The Thawani transaction has been declined.');
             wc_add_notice( __('Thank you for shopping with us.', 'woothemes') . "However, the transaction has been declined.", 'error' );
           } else {
-            echo '<script>console.log("Response: ' . $response . '")</script>';
+            wc_add_notice( __('Thank you for shopping with us.', 'woothemes') . "However, the transaction has been declined.", 'error' );
           }
         } else {
           //Return error if payment request not success and notify admin via email
@@ -418,10 +417,6 @@ function woocommerce_process_thawani_payment() {
         }
       }
     }
-
-
-
-
 
   }
 }
