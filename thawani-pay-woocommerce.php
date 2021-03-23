@@ -203,7 +203,7 @@ function thawani_init_gateway_class() {
         $quantity = $item->get_quantity();
         $subtotal = $item->get_subtotal();
         $total_price = $item->get_total();
-        array_push($products_list, array('name'=> preg_replace("/[^a-zA-Z0-9 ]/", "", substr($product_name, 0, 39)), 'unit_amount' => $total_price * 1000, 'quantity' => $quantity));
+        array_push($products_list, array('name'=> preg_replace("/[^a-zA-Z0-9 ]/", "", substr($product_name, 0, 40)), 'unit_amount' => $total_price * 1000, 'quantity' => $quantity));
         
       }
 
