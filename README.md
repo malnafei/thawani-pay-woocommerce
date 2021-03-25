@@ -65,6 +65,10 @@ You can use the test cards provided by Thawani Team:
 
 ## Changelog
 
+# 1.1.0 #
+* fix product name must be a string with a maximum length of 40 issue.
+* Add billing phone to request metadata.
+
 # 1.0.0 #
 * first public version
 
