@@ -35,7 +35,7 @@ For detailed information and signup please visit: [Thawani Pay](https://thawani.
 - [ ] Webhook
 - [ ] Payment card tokenization - Saved cards
 - [ ] Refund - intgrate Thawani refund API with woocomerce refund feature 
-- [ ] Transaction details - View payment transaction details on on order edit.
+- [ ] Transaction details - View payment transaction details on order edit.
 
 ## Screenshots
 <img width="1664" alt="Screen Shot 2021-03-10 at 11 18 05 AM" src="https://user-images.githubusercontent.com/15148391/110591421-7c90ba00-8192-11eb-8d9e-6da8c3358738.png">
