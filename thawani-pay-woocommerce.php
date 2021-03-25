@@ -215,6 +215,7 @@ function thawani_init_gateway_class() {
       }
 
       $billing_email = $order->get_billing_email();
+      $billing_phone = $order->get_billing_phone();
       $billing_email = preg_replace("/[+]/", "00", $billing_email);
       $fname = $order->get_billing_first_name();
       $lname = $order->get_billing_last_name();
@@ -233,6 +234,7 @@ function thawani_init_gateway_class() {
           'customer_id' => $user_id,
           'order_id' => $order_id,
           'customer_email' => $billing_email,
+          'customer_phone' => $billing_phone
         ),
       );
       
