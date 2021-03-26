@@ -30,6 +30,10 @@ add_filter( 'woocommerce_payment_gateways', 'thawani_add_gateway_class' );
 add_action( 'plugins_loaded', 'thawani_init_gateway_class' );
 function thawani_init_gateway_class() {
 
+  //check if wooCommerce is loaded or not 
+  if( !class_exists('WooCommerce') )
+    return; 
+
   class WC_Thawani_Gateway extends WC_Payment_Gateway {
     public function __construct() {
       $plugin_dir = plugin_dir_url(__FILE__);
