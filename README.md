@@ -32,10 +32,11 @@ For detailed information and signup please visit: [Thawani Pay](https://thawani.
 - [x] Support PRODUCTION api
 - [x] Create new payment
 - [x] Success and Cancel callbacks
-- [ ] Webhook
 - [ ] Payment card tokenization - Saved cards
 - [ ] Refund - intgrate Thawani refund API with woocomerce refund feature 
 - [ ] Transaction details - View payment transaction details on order edit.
+- [ ] Woocommerce tax
+- [ ] Webhook
 
 ## Screenshots
 <img width="1664" alt="Screen Shot 2021-03-10 at 11 18 05 AM" src="https://user-images.githubusercontent.com/15148391/110591421-7c90ba00-8192-11eb-8d9e-6da8c3358738.png">
@@ -64,6 +65,9 @@ You can use the test cards provided by Thawani Team:
 <img src="https://user-images.githubusercontent.com/15148391/110593730-620c1000-8195-11eb-87c9-479082e9c39b.png" width="420">
 
 ## Changelog
+
+# 1.2.0 #
+* Arabic products supported now.
 
 # 1.1.0 #
 * fix product name must be a string with a maximum length of 40 issue.

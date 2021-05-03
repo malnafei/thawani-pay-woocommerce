@@ -48,3 +48,10 @@ Please go to https://developer.thawani.om/ for more information
 
 = 1.0.0 =
 * first public version
+
+= 1.1.0 =
+* fix product name must be a string with a maximum length of 40 issue.
+* Add billing phone to request metadata.
+
+= 1.2.0 =
+* Arabic products supported now.
