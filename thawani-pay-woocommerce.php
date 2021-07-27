@@ -630,4 +630,3 @@ add_action( 'admin_print_styles', 'plugin_scripts' );
         remove_submenu_page( 'index.php', 'thawani-v2' );
     }
 }
-
