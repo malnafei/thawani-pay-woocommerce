@@ -5,7 +5,7 @@
 Accepts payments with the **Thawani Pay v2** Gateway for WooCommerce
 
 This is the unofficial **Thawani Pay v2** payment gateway plugin for WooCommerce. Allows you to accept credit cards, debit cards payments with the WooCommerce plugin. It uses a seamless integration, allowing the customer to pay on your website quickly.
-Thawani Checkout API Documentation: [Thawani API Documentation](https://developer.thawani.om/)
+Thawani Checkout API Documentation: [Thawani API Documentation](https://docs.thawani.om/)
 
 > **Note:** Thawani Pay is currently available for businesses with account in Thawani company.
 
