@@ -2,7 +2,7 @@
 /*
 Plugin Name: Thawani Pay v2
 Description: Thawani V2 Payment Gateway for WooCommerce
-Version: 1.3.0
+Version: 1.3.2
 Author: Mahmoud Alnafei
 Author URI: https://twitter.com/magic_coding
 Tags: payment, online payment, woocommerce, thawani pay, oman payment gateway
@@ -260,7 +260,7 @@ add_action( 'admin_print_styles', 'plugin_scripts' );
           // $subtotal_tax = $item->get_subtotal_tax(); // Line subtotal tax
           // $price_incl_tax = ( $subtotal + $subtotal_tax ) / $quantity;
 
-          array_push($products_list, array('name'=> substr($product_name, 0, 40), 'unit_amount' => $price_excl_tax * 1000, 'quantity' => $quantity));
+          array_push($products_list, array('name'=> substr($product_name, 0, 39), 'unit_amount' => $price_excl_tax * 1000, 'quantity' => $quantity));
         }
 
         //check for shipping cost to be added as product item on Thawani checkout api.
