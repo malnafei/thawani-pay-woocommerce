@@ -260,7 +260,7 @@ add_action( 'admin_print_styles', 'plugin_scripts' );
           // $subtotal_tax = $item->get_subtotal_tax(); // Line subtotal tax
           // $price_incl_tax = ( $subtotal + $subtotal_tax ) / $quantity;
 
-          array_push($products_list, array('name'=> substr($product_name, 0, 39), 'unit_amount' => $price_excl_tax * 1000, 'quantity' => $quantity));
+          array_push($products_list, array('name'=> mb_substr($product_name, 0, 39, 'utf-8'), 'unit_amount' => $price_excl_tax * 1000, 'quantity' => $quantity));
         }
 
         //check for shipping cost to be added as product item on Thawani checkout api.
