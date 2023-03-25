@@ -462,7 +462,7 @@ add_action( 'admin_print_styles', 'plugin_scripts' );
               $wc_emails = WC()->mailer()->get_emails();
               $wc_emails['WC_Email_New_Order']->trigger( $order_id );
               $wc_emails['WC_Email_Customer_Processing_Order']->trigger( $order_id );
-              wc_add_notice( __('Thank you for shopping with us.', 'woothemes') . "order placed successfully", 'success' );
+              wc_add_notice( __('Thank you for shopping with us.', 'woothemes') . " Order placed successfully", 'success' );
             } else if($payment_status == 'unpaid') {
               $order->add_order_note('The Thawani transaction has been declined.');
               wc_add_notice( __('Thank you for shopping with us.', 'woothemes') . "However, the transaction has been declined.", 'error' );
