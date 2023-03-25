@@ -330,11 +330,6 @@ add_action( 'admin_print_styles', 'plugin_scripts' );
               $invoice_id = $response['data']['invoice'];
               update_post_meta( $order_id, 'session_id', $session_id);
               update_post_meta( $order_id, 'invoice_id', $invoice_id);
-              
-              // Trigger WooCommerce new order email to both
-              $wc_emails = WC()->mailer()->get_emails();
-              $wc_emails['WC_Email_New_Order']->trigger( $order_id );
-              
               $redirect_url = $thawani_api . "/pay/" . $session_id. '?key=' . $publishable_key;
               return array(
                 'result'   => 'success',
@@ -462,6 +457,11 @@ add_action( 'admin_print_styles', 'plugin_scripts' );
               $order->payment_complete();
               $order->add_order_note('Thawani payment successful.');
               $woocommerce -> cart -> empty_cart();
+              
+              // Trigger WooCommerce new order and order processing email to Client and Customer
+              $wc_emails = WC()->mailer()->get_emails();
+              $wc_emails['WC_Email_New_Order']->trigger( $order_id );
+              $wc_emails['WC_Email_Customer_Processing_Order']->trigger( $order_id );
               wc_add_notice( __('Thank you for shopping with us.', 'woothemes') . "order placed successfully", 'success' );
             } else if($payment_status == 'unpaid') {
               $order->add_order_note('The Thawani transaction has been declined.');
